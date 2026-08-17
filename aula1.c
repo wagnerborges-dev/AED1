@@ -4,14 +4,14 @@
 int main (void){
     
 int numero;
-int*ponteiro = NULL;
+int*ponteiro;
 
 printf(" digite um valor: ");
 scanf("%d", &numero);
 
 ponteiro = &numero;
 
-printf(" Numero = %d \n Ponteiro = %p");
+printf(" Numero = %d \n Ponteiro = %p", numero, ponteiro);
 
 return (0);
 
