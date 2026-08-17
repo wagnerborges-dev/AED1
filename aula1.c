@@ -11,7 +11,11 @@ scanf("%d", &numero);
 
 ponteiro = &numero;
 
-printf(" Numero = %d \n Ponteiro = %p", numero, ponteiro);
+printf(" Numero = %d \n Ponteiro = %p \n", numero, ponteiro);
+
+*ponteiro = 4; 
+
+printf(" Numero = %d \n Ponteiro = %p \n", numero, ponteiro);    
 
 return (0);
 
