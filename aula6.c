@@ -23,7 +23,7 @@ void impressao (Entrevista *e){
     printf(" endereco: %s \n", e->endereco);
 }
 
-// inciando o programa com o int main
+// inciando o programa 
 
 int main(){
     Entrevista e[MAX]; // definindo a variavel struct
