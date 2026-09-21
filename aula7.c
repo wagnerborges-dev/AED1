@@ -6,7 +6,9 @@ int main(){
     // Função para abrir arquivo
 
   FILE * arq;
-  arq = fopen("arquivo.txt", "w");
+  char linha[100];
+
+  arq = fopen("arquivo.txt", "r");
 
   if(arq == NULL){
     printf(" Nao e possivel criar o arquivo");
@@ -15,6 +17,23 @@ int main(){
   else{
     printf(" Arquivo criado");
   }
+
+   // fputc('C', arq);
+   // fputs(" Boa noite! \n ", arq);
+   // fprintf(arq, "Hellow word!!!"); 
+
+   // fgets(linha, 100, arq);
+   // printf("%s", linha);
+
+   // fscanf(arq, "%s", linha);
+   // printf("%s", linha);
+
+   while(!feof(arq)){
+      fscanf(arq, "%s", linha);
+      printf("%s", linha);
+   }
+
+fclose(arq);
 
 return 0;
 
